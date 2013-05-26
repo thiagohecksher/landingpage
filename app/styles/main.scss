@@ -1,9 +1,31 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-@import 'sass-bootstrap/lib/bootstrap';
+@import "sass-bootstrap/lib/bootstrap";
+@import "sass-bootstrap/lib/responsive";
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+#about {
+  .icons {
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    width: 33.3%;
+    max-width: none;
+    float: left;
+  }
+}
+
+#work {
+  background-color: #333;
+  margin: 50px 0;
+  padding: 10px 0;
+  .job {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
