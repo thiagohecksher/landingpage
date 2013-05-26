@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!');
+if(!Modernizr.backgroundsize) {
+  $('.hero-unit').backstretch('images/hero-bg.jpg');
+}

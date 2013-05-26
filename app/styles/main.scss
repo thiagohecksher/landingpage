@@ -4,15 +4,29 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "sass-bootstrap/lib/bootstrap";
 @import "sass-bootstrap/lib/responsive";
 
+.hero-unit {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  background: url(../images/hero-bg.jpg) no-repeat center -100px fixed;
+  @include background-size(cover);
+  @include border-radius(0);
+  
+  iframe {
+    max-width: 100%;
+  }
+}
+
 #about {
+  margin: 100px 0;
   .icons {
     overflow: hidden;
+    margin-top: 20px;
   }
-  img {
-    display: block;
+  .icon {
     width: 33.3%;
     max-width: none;
     float: left;
+    text-align: center;
   }
 }
 
@@ -20,6 +34,8 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
   background-color: #333;
   margin: 50px 0;
   padding: 10px 0;
+
+  h1 { color: #fff }
   .job {
     margin-top: 10px;
     margin-bottom: 10px;
