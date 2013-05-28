@@ -16,10 +16,10 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
   <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
+    <div class="navbar-inner navbar-grass">
       <div class="container">
 
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -28,33 +28,33 @@
           <span class="icon-bar"></span>
         </button>
         
-        <a class="brand" href="./index.html">Template</a>
+        <a class="brand" href="./index.html"><img src="images/logo.png" alt=""></a>
         
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">O Evento</a></li>
+            <li><a href="#work">Fotos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="hero-unit">
+  <div class="hero-unit" id="home">
     <div class="container">
       <div class="row">
         <div class="span5">
-          <h1>Super Título</h1>
+          <h1>Brasileirão de Golfe</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, maxime, ipsum et nobis veritatis temporibus animi quisquam odio. Eius, expedita error unde voluptatibus.</p>
           <p>
-            <a href="#" class="btn btn-primary btn-large">Hire Us</a>
-            <a href="#" class="btn btn-large">Our Work</a>
+            <a href="#" class="btn btn-primary btn-large">Ingresso</a>
+            <a href="#about" class="btn btn-large">Sobre o Evento</a>
           </p>
         </div>
         <div class="span7">
-          <iframe width="560" height="315" src="http://www.youtube.com/embed/LjQQpFtafTw" frameborder="0" allowfullscreen></iframe>
+          
         </div>
       </div>
     </div>
@@ -64,8 +64,13 @@
     <div class="container">
       <div class="row">
         <div class="span8 offset2">
-          <h1>About Us</h1>
+          <h1>O Evento</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi iste molestias quaerat maiores id libero reprehenderit quae. Atque, aspernatur, corrupti quas iure earum alias totam reiciendis eligendi hic dignissimos! Facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non, necessitatibus eos deserunt esse ipsam quo dolores inventore quas quam! Eius, quidem, quibusdam numquam deleniti porro sapiente in quasi amet.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at, itaque, laborum, iste distinctio reprehenderit sit odit nobis eveniet modi impedit praesentium quibusdam aperiam! Quae architecto provident maiores dolor voluptatem?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, velit, cupiditate, quod veritatis aliquam inventore at enim quos iusto autem omnis sed alias qui minima quam? Corporis pariatur id ut?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, voluptas, dolorum expedita officia inventore optio ex perspiciatis nam quo facere? Voluptatem minima obcaecati cum harum eaque dolor sed itaque sunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quisquam, omnis, iste incidunt consequatur dolorem recusandae veritatis porro quos inventore rem ad minima odit asperiores eaque soluta molestiae magnam aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, officiis, impedit nostrum necessitatibus praesentium repudiandae tempora voluptas sed possimus quos? Voluptas, cupiditate, porro tenetur iste quia molestiae fugit deserunt veniam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, eveniet ipsa nobis error similique sunt voluptatem totam saepe veniam harum deserunt perspiciatis at omnis in quaerat. Enim, eius dolore esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ea, excepturi provident architecto possimus quaerat doloremque facere explicabo eaque id. Dolorum, explicabo, id atque odit iusto eum beatae ratione deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, atque ducimus ad beatae enim inventore quidem doloribus eveniet culpa accusamus est delectus sed nostrum nulla nihil magni similique laborum cumque.</p>
           <div class="icons">
             <div class="icon">
               <img src="http://placehold.it/128x128" alt="" class="img-circle" width="128" height="128">
@@ -86,31 +91,16 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <h1>Our Work</h1>
+          <h1>Fotos</h1>
         </div>
-        <div class="span3 job">
+        <div clas="span12 fotos">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
-        </div>
-        <div class="span3 job">
           <img src="http://placehold.it/128x128" alt="" width="128" height="128">
         </div>
       </div>
@@ -120,29 +110,37 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="span4">
-          <address>
-            Av. Prefeito Dulcidio Cardoso, 1350 <br>
-            Barra da Tijuca, Rio de Janeiro.
-          </address>
-        </div>
-
-        <div class="span8">
+        <div class="span5">
           <form>
-            <label for="name">Name</label>
+            <h1>Contato</h1>
+            <div class="form-actions name">
+              <label for="name"><p>Name</p></label>
+            </div>
             <input name="name" type="text" id="name" required>
-
-            <label for="email">Email</label>
+            <br>
+            <div class="form-actions name">
+              <label for="email"><p>E-mail</p></label>
+            </div>
             <input name="email" type="email" id="email" required>
-
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            <br>
+            <div class="form-actions">
+              <label for="message"><p>Mensagem</p></label><br><br>
+              <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+            </div>
 
             <div class="form-actions">
               <input type="submit" value="Send" class="btn btn-primary">
             </div>
 
           </form>
+        </div>
+
+        <div class="span7">
+          <address>
+            <h1>Endereço</h1>
+            Av. Prefeito Dulcidio Cardoso, 1350 <br>
+            Barra da Tijuca, Rio de Janeiro.
+          </address>
         </div>
       </div>
     </div>
@@ -163,7 +161,9 @@
   <!-- build:js scripts/main.js -->
   <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>
+  <script src="bower_components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
   <script src="bower_components/jquery-backstretch/jquery.backstretch.js"></script>
+  <script src="bower_components/jquery.smooth-scroll/jquery.smooth-scroll.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
 

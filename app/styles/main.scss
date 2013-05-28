@@ -4,10 +4,21 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "sass-bootstrap/lib/bootstrap";
 @import "sass-bootstrap/lib/responsive";
 
+.navbar-inverse {
+  .navbar-inner {
+    @include box-shadow(#000 0 2px 10px);
+    .brand {
+      padding-top:0;
+      padding-bottom:0;
+    }
+  }
+}
+
 .hero-unit {
   margin-bottom: 0;
-  padding-bottom: 20px;
-  background: url(../images/hero-bg.jpg) no-repeat center -100px fixed;
+  padding-top:80px;
+  padding-bottom: 220px;
+  background: url(../images/herounit-bg.jpg) no-repeat 0 -110px fixed;
   @include background-size(cover);
   @include border-radius(0);
   
@@ -15,12 +26,18 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     max-width: 100%;
   }
   h1, p {
-    color:#fff;
+    color:#ccc;
+    text-shadow: 2px 1px 5px #000;
   }
+  p {
+    margin:20px 0;
+  }
+
 }
 
 #about {
-  margin: 100px 0;
+  padding: 80px 0;
+  @include box-shadow(#000 0 -2px 10px);
   .icons {
     overflow: hidden;
     margin-top: 20px;
@@ -34,17 +51,109 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 }
 
 #work {
-  background-color: #333;
-  margin: 50px 0;
-  padding: 10px 0;
+  background:#222;
+  padding: 80px 0;
+  @include box-shadow(#000 0 2px 10px);
+  h1 { 
+    color: #ddd;
+    text-shadow: 2px 1px 5px #000;
+    margin-bottom:40px;
+   }
+  
+  img {
+    width:25%;
+    float:left;
+  } 
+}
 
-  h1 { color: #fff }
-  .job {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    img {
-      width: 100%;
-      height: auto;
+#contact {
+  padding:60px 0;
+  background: url(../images/contact-bg.jpg) no-repeat 0 bottom fixed;
+  @include background-size(cover);
+  @include border-radius(0);
+  form {
+    background:#fff;
+    padding:20px;
+    @include box-shadow(#000 0 0 10px);
+    .form-actions {
+      border-left:5px solid #0044cc;
+      padding:20px;
+      margin-top:5px;
+      margin-bottom:5px;
+      background:#e5e5e5;
+      border-top:none;
+      p {
+        display:block;
+        height: 30px;
+        line-height:30px;
+        margin:0;
+      }
+    }
+    .name {
+      width:50px;
+      float:left;
+    }
+  }
+  label {
+    float:left;
+    margin:0;
+  }
+  input {
+    margin: 0 0 0 20px;
+  }
+
+  #name, #email {
+      width:294px;
+      height:28px;
+      margin:5px 0;
+      padding:20px;
+      border-radius:0;
+      border:none;
+      border-top:1px solid #d5d5d5;
+      border-bottom:1px solid #d5d5d5;
+      border-right:1px solid #d5d5d5;
+  }
+
+  textarea {
+    width:369px;
+    border:none;
+    border-radius:0;
+  }
+
+  address {
+    background:#fff;
+    padding:20px;
+    @include box-shadow(#000 0 0 10px);
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+  .hero-unit {
+    background-position:0 0;
+  } 
+
+  #contact {
+    #name, #email {
+      width:204px;
+    }
+    textarea {
+      width: 279px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width:979px) {
+  
+  .hero-unit {
+    background-position:0 0;
+  }
+
+  #contact {
+    #name, #email {
+      width:114px;
+    }
+    textarea {
+      width: 189px;
     }
   }
 }
