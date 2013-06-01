@@ -35,3 +35,30 @@ $('#filters a').click(function(e){
 });
 
 $('.dropdown-toggle').dropdown()
+
+$('#contact-form').submit(function(e){
+  e.preventDefault();
+
+  var   name = $(this).find('input[name="name"]').val(),
+        email = $(this).find('input[name="email"]').val(),
+        message = $(this).find('textarea[name="message"]').val(),
+        dataString = 'name=' + name + '&email=' + email + '&message=' + message;
+
+
+  console.log(dataString);
+
+  $.ajax({
+
+    type: 'POST',
+     url: 'send.php',
+    data: dataString,
+
+    success: function(){
+      console.log('Dados Enviados');
+    },
+    error: function(){
+      console.log('Deu merda');
+    },
+
+  })
+});
